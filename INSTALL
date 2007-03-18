@@ -129,7 +129,8 @@ You need the following software to fully build this version of libavl:
 	  makeinfo is needed to build text, Info, and HTML versions of
 	  the libavl manual.  Version 4.1 or later is required to
 	  build the HTML version of the manual, but version 4.7 is
-	  recommended, because it is the version used for testing.
+	  recommended, and this version or later is recommended in any
+	  case.
 
 	* GNU Ghostscript (ftp://ftp.gnu.org/pub/gnu/ghostscript) and
 	  Imagemagick (http://www.imagemagick.org/).
