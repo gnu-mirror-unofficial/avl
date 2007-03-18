@@ -102,7 +102,7 @@ meeting of Pi Mu Epsilon, Toronto, Canada.
 @bibdfn{SGI 1993} Silicon Graphics, Inc., @cite{Standard Template Library
 Programmer's Guide}.  @uref{http://www.sgi.com/tech/stl/}.
 
-@bibdfn{Stout 1986} Stout, F.@: S. and B.@: L.@: Warren, ``Tree
+@bibdfn{Stout 1986} Stout, Q.@: F.@: and B.@: L.@: Warren, ``Tree
 Rebalancing in Optimal Time and Space'', @cite{Communications of the
 ACM} 29 (1986), pp. 902--908.
 
