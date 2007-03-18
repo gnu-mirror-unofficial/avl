@@ -1,6 +1,5 @@
 TEX = etex # substitute tex if you lack etex
 WEAVE_FLAGS =
-#CC = checkergcc
 #TANGLE_FLAGS = -l # put #line directives in source files
 CFLAGS = -g -W -Wall -ansi -pedantic # enable many GCC warnings
 LDFLAGS = -g
