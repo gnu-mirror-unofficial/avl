@@ -561,10 +561,10 @@ but there's a simpler way for insertion, so keep reading.}  Fortunately,
 there is another approach we can use.  Remember the extra code we put
 into @<Step 1: Search AVL tree for insertion point@>?  This code kept
 track of the last node we'd passed through that had a nonzero balance
-factor as |s|.  We can use |s| to move downward, instead of upward,
+factor as |y|.  We can use |y| to move downward, instead of upward,
 through the nodes whose balance factors are to be updated.
 
-Node |s| itself is the topmost node to be updated; when we arrive at
+Node |y| itself is the topmost node to be updated; when we arrive at
 node |n|, we know we're done.  We also kept track of the directions we
 moved downward in |da[]|.  Suppose that we've got a node |p| whose
 balance factor is to be updated and a direction |d| that we moved from

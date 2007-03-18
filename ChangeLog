@@ -1,3 +1,12 @@
+Mon Jan 10 22:09:00 2005  Ben Pfaff  <blp@gnu.org>
+
+	These problems reported by Thomas <Thomas@Cantr.net>.
+	
+	* avl.w: Fix a typo: |s| should be |y| in Implementation, under
+	Step 3 in AVL Insertion.
+
+	* texiweb.c: Also need to avoid -- ligature in code.
+
 Tue Dec 28 22:54:04 2004  Ben Pfaff  <blp@gnu.org>
 
 	* INSTALL, NEWS: Updated.

@@ -3239,7 +3239,7 @@ print (const char *cp, int flags)
 	  break;
 
 	case TOKEN_MINUSMINUS:
-	  emits ("@math{--}");
+	  emits ("@math{-}@math{-}");
 	  break;
 
 	case TOKEN_NEG:
