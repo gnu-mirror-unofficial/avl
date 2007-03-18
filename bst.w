@@ -302,9 +302,9 @@ can be fully supported by @libavl{} in any given tree, because a binary
 tree of height |n| contains at most @altmath{2^n - 1, 2**n - 1} nodes.
 
 The |BST_MAX_HEIGHT| macro sets the maximum height of a BST.  The
-default value of 32 allows for trees with up to @altmath{2^{32} - 1,
-2**32 - 1} = 4,294,967,295 nodes.  On today's common 32-bit computers
-that support only 4 GB of memory at most, this is hardly a limit,
+default value of 64 allows for trees with up to @altmath{2^{64} - 1,
+2**64 - 1}.  On today's common 32- and 64-bit computers,
+this is hardly a limit,
 because memory would be exhausted long before the tree became too big.
 
 The BST routines that use fixed stacks also detect stack overflow and

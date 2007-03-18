@@ -86,7 +86,7 @@ on AVL trees.  Here's an outline of the AVL code:
 #include <stddef.h>
 
 @<Table types; tbl => avl@>
-@<BST maximum height; bst => avl@>
+@<AVL maximum height@>
 @<BST table structure; bst => avl@>
 @<AVL node structure@>
 @<BST traverser structure; bst => avl@>
@@ -173,9 +173,9 @@ purposes, it suffices to state the results:
 An AVL tree with @altmath{n, |n|} nodes has height between
 @altmath{\log_2(n + 1), |log2 (n + 1)|} and
 @altmath{1.44\log_2(n+2)-\nobreak .328, |1.44 * log2 (n + 2) - 0.328|}.
-An AVL tree with height @altmath{h, |h|} has between @altmath{2^{h +
-.328} / 1.44, |pow (2|@comma| (h + .328) / 1.44) - 2|} and @altmath{2^h
-- 1, |pow (2|@comma| h) - 1|} nodes.
+An AVL tree with height @altmath{h, |h|} has between
+@altmath{1.17(1.618^h) - 2, |1.17 * pow (1.618|@comma| h) - 2|} and
+@altmath{2^h - 1, |pow (2|@comma| h) - 1|} nodes.
 
 For comparison, an optimally balanced BST with |n| nodes has height
 @altmath{\lceil\log_2{(n+1)}\rceil, |ceil (log2 (n + 1))|}.  An
@@ -197,6 +197,19 @@ height, so the results above are quite encouraging: an AVL tree will
 never be more than about 50% taller than the corresponding optimally
 balanced tree.  Thus, we have a guarantee of good performance even in
 the worst case, and optimal performance in the best case.
+
+To support at least @altmath{2^{64} - 1, 2**64 - 1} nodes in an AVL
+tree, as we do for unbalanced binary search trees, we must define the
+maximum AVL tree height to be @altmath{1.44\log_2((2^64-1)+2)-\nobreak .328,
+|1.44 * log2 ((2**64 - 1) + 2) - 0.328|}, which is 92:
+
+@<AVL maximum height@> =
+/* Maximum AVL tree height. */
+#ifndef AVL_MAX_HEIGHT
+#define AVL_MAX_HEIGHT 92
+#endif
+
+@
 
 @references
 @bibref{Knuth 1998b}, theorem 6.2.3A.

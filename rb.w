@@ -259,7 +259,7 @@ because in the worst case RB trees store nodes less efficiently:
 @<RB maximum height@> =
 /* Maximum RB height. */
 #ifndef RB_MAX_HEIGHT
-#define RB_MAX_HEIGHT 48
+#define RB_MAX_HEIGHT 128
 #endif
 
 @

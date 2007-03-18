@@ -1,6 +1,18 @@
 2007-03-18  Ben Pfaff  <blp@gnu.org>
 
-	* references.w: (Stout 1986) Fix author names.
+	Thanks to Bruno Haible <bruno@clisp.org> for reporting these bugs.
+
+	* avl.w, bst.w, rb.w: Fix BST_MAX_HEIGHT, AVL_MAX_HEIGHT,
+	RB_MAX_HEIGHT to use maximum, not minimum, height of a tree.
+	Update for the 64-bit world, too.
+
+	* avl.w: Fix lower bound on number of nodes in AVL tree with given
+	height.  
+
+2007-03-18  Ben Pfaff  <blp@gnu.org>
+
+	* references.w: (Stout 1986) Fix author name.  Thanks to Quentin
+	Stout for reporting this bug.
 
 2005-01-10  Ben Pfaff  <blp@gnu.org>
 
