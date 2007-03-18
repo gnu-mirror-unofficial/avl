@@ -1,7 +1,8 @@
 @c -*-texinfo-*-
 @c 
 @c GNU libavl - library for manipulation of binary trees.
-@c Copyright (C) 1998-2002, 2004 Free Software Foundation, Inc.
+@c Copyright (C) 1998, 1999, 2000, 2001, 2002, 2004 Free Software
+@c Foundation, Inc.
 @c 
 @c This program is free software; you can redistribute it and/or
 @c modify it under the terms of the GNU General Public License as
@@ -15,12 +16,8 @@
 @c 
 @c You should have received a copy of the GNU General Public License
 @c along with this program; if not, write to: Free Software
-@c Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
-@c 02111-1307, USA.
-@c 
-@c The author may be contacted as blp@gnu.org on the Internet, or
-@c write to Ben Pfaff, Stanford University, Computer Science Dept.,
-@c 353 Serra Mall, Stanford CA 94305, USA.
+@c Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 
+@c 02110-1301 USA.
 
 @deftypedef tbst_comparison_func
 @deftypedef tbst_item_func

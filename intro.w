@@ -1,7 +1,8 @@
 @c -*-texinfo-*-
 @c 
 @c GNU libavl - library for manipulation of binary trees.
-@c Copyright (C) 1998-2002, 2004 Free Software Foundation, Inc.
+@c Copyright (C) 1998, 1999, 2000, 2001, 2002, 2004 Free Software
+@c Foundation, Inc.
 @c 
 @c This program is free software; you can redistribute it and/or
 @c modify it under the terms of the GNU General Public License as
@@ -15,12 +16,8 @@
 @c 
 @c You should have received a copy of the GNU General Public License
 @c along with this program; if not, write to: Free Software
-@c Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
-@c 02111-1307, USA.
-@c 
-@c The author may be contacted as blp@gnu.org on the Internet, or
-@c write to Ben Pfaff, Stanford University, Computer Science Dept.,
-@c 353 Serra Mall, Stanford CA 94305, USA.
+@c Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 
+@c 02110-1301 USA.
 
 @node Introduction, The Table ADT, Preface, Top
 @chapter Introduction
@@ -283,11 +280,13 @@ license:
 @<License@> =
 @iftangle
 /* libavl - library for manipulation of binary trees.
-   Copyright (C) 1998-2002, 2004 Free Software Foundation, Inc.
+   Copyright (C) 1998, 1999, 2000, 2001, 2002, 2004 Free Software
+   Foundation, Inc.
 @end iftangle
 @ifweave
 /* GNU @libavl{} - library for manipulation of binary trees.
-   Copyright @copyright{} 1998--2002, 2004 Free Software Foundation, Inc.
+   Copyright @copyright{} 1998, 1999, 2000, 2001, 2002, 2004 Free
+   Software Foundation, Inc.
 @end ifweave
 
    This program is free software; you can redistribute it and/or
@@ -299,15 +298,11 @@ license:
    WITHOUT ANY WARRANTY; without even the implied warranty of
    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
    See the GNU General Public License for more details.
-
+ 
    You should have received a copy of the GNU General Public License
-   along with this program; if not, write to the Free Software
-   Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
-   02111-1307, USA.
-
-   The author may be contacted at <blp@@gnu.org> on the Internet, or
-   write to Ben Pfaff, Stanford University, Computer Science Dept., 353
-   Serra Mall, Stanford CA 94305, USA.
+   along with this program; if not, write to: Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 
+   02110-1301 USA.
 */
 
 @
