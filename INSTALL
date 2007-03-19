@@ -1,6 +1,21 @@
 Installing libavl				-*- text -*-
 =================
 
+libavl is not intended to be installed as a shared library.  Instead,
+its source files are meant to be included in programs directly.	 A
+given program normally uses only one or two of libavl's tree
+structures.  Only the C source and header files for those structures
+need to be included.  Refer to the libavl manual for more information.
+
+As a result, there is no real "installation procedure" for libavl.  If
+you like, you can install the test and demo programs in a convenient
+location, but it hard to imagine a practical use for them other than
+as tests and demonstrations.
+
+Hence, this file gives information on what the libavl distribution
+includes and how to build it.  It does not furnish an actual
+installation procedure.
+
 What's here
 -----------
 
@@ -169,18 +184,4 @@ to build a few interesting subsets:
 	* All the test and demo programs: `make programs'.
 
 For a fairly comprehensive battery of tests, run `make check'.	This
-will take several minutes unless your machine is very fast indeed.
-
-Installing
-----------
-
-libavl is not intended to be installed as a shared library.  Instead,
-its source files are meant to be included in programs directly.	 A
-given program normally uses only one or two of libavl's tree
-structures.  Only the C source and header files for those structures
-need to be included.  Refer to the libavl manual for more information.
-
-As a result, there is no real "installation procedure" for libavl.  If
-you like, you can install the test and demo programs in a convenient
-location, but it hard to imagine a practical use for them other than
-as tests and demonstrations.
+may take several minutes.
