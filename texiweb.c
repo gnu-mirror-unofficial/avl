@@ -4602,7 +4602,7 @@ N_("  -a, --unanswered       (weave) also list exercises without answers\n"),
 N_("  -n, --nonzero-indent   (weave) warn for indent adjust between blocks\n"),
 N_("  -h, --help             print this help, then exit\n"),
 N_("  -v, --version          show version, then exit\n"),
-N_("\nReport bugs to Ben Pfaff <blp@gnu.org>.\n"),
+N_("\nReport bugs to bug-avl@gnu.org.\n"),
 NULL,
   };
 
@@ -4614,8 +4614,7 @@ N_("texiweb 0.9.0\n"
    "not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
    "You may redistribute copies of texiweb under the terms of the GNU\n"
    "General Public License.  For more information about these\n"
-   "matters, see the file named COPYING.\n"
-   "Written by Ben Pfaff <blp@gnu.org>.\n");
+   "matters, see the file named COPYING.\n");
 
 static void usage (int exit_code);
 static void option (int op);

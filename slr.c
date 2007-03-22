@@ -1204,8 +1204,7 @@ parse_command_line (int argc, char **argv)
     "This is free software; see the source for copying conditions.  "
     "There is NO\n"
     "WARRANTY; not even for MERCHANTABILITY or FITNESS FOR A "
-    "PARTICULAR PURPOSE.\n\n"
-    "Written by Ben Pfaff <blp@gnu.org>.\n";
+    "PARTICULAR PURPOSE.\n\n";
   
   const char *short_pgm_name = strrchr (argv[0], '/');
   if (short_pgm_name != NULL)

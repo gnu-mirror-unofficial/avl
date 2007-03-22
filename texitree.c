@@ -379,7 +379,7 @@ main (int argc, char *argv[])
 	 "\nOptions:\n"
 	 "  -w WIDTH  page width for centering, WIDTH in characters (text)\n"
 	 "            or 1/1000 point (PostScript), default 72 or 612000\n"
-	 "\nReport bugs to Ben Pfaff <blp@gnu.org>.\n", argv[0]);
+	 "\nReport bugs to bug-avl@gnu.org.\n", argv[0]);
 
       return argc == 2 ? EXIT_SUCCESS : EXIT_FAILURE;
     }
@@ -393,8 +393,7 @@ main (int argc, char *argv[])
 	 "not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
 	 "You may redistribute copies of texiweb under the terms of the GNU\n"
 	 "General Public License.  For more information about these\n"
-	 "matters, see the file named COPYING.\n"
-	 "Written by Ben Pfaff <blp@gnu.org>.\n");
+	 "matters, see the file named COPYING.\n");
 
       return EXIT_SUCCESS;
     }
