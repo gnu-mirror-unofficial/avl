@@ -1,5 +1,17 @@
 2007-08-25  Ben Pfaff  <blp@gnu.org>
 
+	* afm2c: Update to GPLv3.
+	* check-table: Ditto.
+	* cover.eps: Ditto.
+	* eps2png: Ditto.
+	* slr.c: Ditto.
+	* texitree.c: Ditto.
+	* texiweb.c: Ditto.
+
+	* intro.w: Update libraries to LGPLv3, programs to GPLv3.
+
+2007-08-25  Ben Pfaff  <blp@gnu.org>
+
 	* texiweb.c (gettext): Fix GCC warning.
 	(_): Ditto.
 	(N_): Ditto.

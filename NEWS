@@ -1,5 +1,5 @@
 libavl NEWS -- history of user-visible changes.  
-Time-stamp: <2007-08-25 14:26:57 blp>
+Time-stamp: <2007-08-25 14:31:40 blp>
 Copyright (C) 1998, 1999 Free Software Foundation, Inc.
 See the end for copying conditions.
 
@@ -8,8 +8,9 @@ Please send libavl bug reports to blp@gnu.org.
 Changes for version 2.0.3:
 
   License change: the book is now under the GNU Free Documentation
-  License, the libraries under the GNU Lesser General Public License,
-  and programs under the GNU General Public License.
+  License (version 1.2 or later), the libraries under the GNU Lesser
+  General Public License (version 3 or later), and programs under the
+  GNU General Public License (version 3 or later).
 
 Changes for version 2.0.2:
 
