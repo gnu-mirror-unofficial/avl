@@ -165,13 +165,13 @@ An AVL tree with @altmath{n, |n|} nodes has height between
 @altmath{\log_2(n + 1), |log2 (n + 1)|} and
 @altmath{1.44\log_2(n+2)-\nobreak .328, |1.44 * log2 (n + 2) - 0.328|}.
 An AVL tree with height @altmath{h, |h|} has between
-@altmath{1.17(1.618^h) - 2, |1.17 * pow (1.618|@comma| h) - 2|} and
-@altmath{2^h - 1, |pow (2|@comma| h) - 1|} nodes.
+@altmath{1.17(1.618^h) - 2, |1.17 * pow (1.618|@comma{}| h) - 2|} and
+@altmath{2^h - 1, |pow (2|@comma{}| h) - 1|} nodes.
 
 For comparison, an optimally balanced BST with |n| nodes has height
 @altmath{\lceil\log_2{(n+1)}\rceil, |ceil (log2 (n + 1))|}.  An
 optimally balanced BST with height |h| has between @altmath{2^{h - 1},
-|pow (2|@comma| h - 1)|} and @altmath{2^h - 1, |pow (2|@comma| h) - 1|}
+|pow (2|@comma{}| h - 1)|} and @altmath{2^h - 1, |pow (2|@comma{}| h) - 1|}
 @iftex
 nodes.
 @end iftex

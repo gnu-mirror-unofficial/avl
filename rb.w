@@ -149,7 +149,7 @@ A red-black tree contains only black nodes.  Describe the tree's shape.
 
 @answer
 It must be a @gloss{complete binary tree} of exactly
-@altmath{2^n - 1, |pow (2|@comma| n) - 1|} nodes.
+@altmath{2^n - 1, |pow (2|@comma{}| n) - 1|} nodes.
 
 If a red-black tree contains only red nodes, on the other hand, it
 cannot have more than one node, because of rule 1.
@@ -176,7 +176,7 @@ the root has a red child.
 
 @exercise
 Suppose we have a perfectly balanced red-black tree with exactly
-@altmath{2^n - 1, |pow (2|@comma| n) - 1|} nodes and a black root.  Is
+@altmath{2^n - 1, |pow (2|@comma{}| n) - 1|} nodes and a black root.  Is
 it possible there is another way to arrange colors in a tree of the
 same shape that obeys the red-black rules while keeping the root
 black?  Is it possible if we drop the requirement that the tree be
@@ -204,13 +204,13 @@ A red-black tree with @altmath{n, |n|} nodes has height at least
 @altmath{\log_2(n+1), |log2 (n + 1)|} but no more than
 @altmath{2\log_2(n+1), |2 * log2 (n + 1)|}.  A red-black tree with
 height @altmath{h, |h|} has at least @altmath{2^{h/2} - 1, |pow
-(2|@comma| h / 2) - 1|} nodes but no more than @altmath{2^h - 1, |pow
-(2|@comma| h) - 1|}.
+(2|@comma{}| h / 2) - 1|} nodes but no more than @altmath{2^h - 1, |pow
+(2|@comma{}| h) - 1|}.
 
 For comparison, an optimally balanced BST with |n| nodes has height
 @altmath{\lceil\log_2{(n+1)}\rceil, |ceil (log2 (n + 1))|}.  An
 optimally balanced BST with height |h| has between @altmath{2^{h - 1},
-|pow (2|@comma| h - 1)|} and @altmath{2^h - 1, |pow (2|@comma| h) - 1|}
+|pow (2|@comma{}| h - 1)|} and @altmath{2^h - 1, |pow (2|@comma{}| h) - 1|}
 nodes.
 @end quotation
 

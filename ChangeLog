@@ -4,6 +4,9 @@
 	* INSTALL: Recommend Texinfo 4.8.
 	* libavl.w: Don't define macro named @comma, as recent Texinfo has
 	a command by that name already.
+	* avl.w: Always write @comma{} instead of @comma, to make makeinfo
+	happy.
+	* rb.w: Ditto.
 	* texinfo.c (open_header_file): Redefine the Texinfo @tab command,
 	because Texinfo 4.8 allows it only inside @multitable, and we want
 	to use it elsewhere.
