@@ -1,5 +1,11 @@
 2007-08-25  Ben Pfaff  <blp@gnu.org>
 
+	* texiweb.c (gettext): Fix GCC warning.
+	(_): Ditto.
+	(N_): Ditto.
+
+2007-08-25  Ben Pfaff  <blp@gnu.org>
+
 	Change licensing structure: book is under GFDL, library under
 	LGPL, programs under GPL.  Thanks to Brett Smith <brett@fsf.org>
 	and RMS for assisting with relicensing.

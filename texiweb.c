@@ -59,9 +59,9 @@
 #define PRINTF_FORMAT(FMT, START) ATTRIBUTE ((format (printf, FMT, START)))
 
 /* This program is not really i18n'd, but it thinks that it is. */
-#define gettext(STRING) (STRING)
-#define _(STRING) (STRING)
-#define N_(STRING) (STRING)
+#define gettext(STRING) STRING
+#define _(STRING) STRING
+#define N_(STRING) STRING
 
 /* Short name of this program. */
 static char *short_pgm_name;
