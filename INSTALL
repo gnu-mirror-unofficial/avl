@@ -2,7 +2,7 @@ Installing libavl				-*- text -*-
 =================
 
 libavl is not intended to be installed as a shared library.  Instead,
-its source files are meant to be included in programs directly.	 A
+its source files are meant to be included in programs directly.  A
 given program normally uses only one or two of libavl's tree
 structures.  Only the C source and header files for those structures
 need to be included.  Refer to the libavl manual for more information.
