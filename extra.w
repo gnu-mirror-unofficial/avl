@@ -475,7 +475,7 @@ parse_command_line (char **args, struct test_options *options) @
 	  break;
 
 	case 'V':
-	  fputs ("GNU libavl 2.0.2\n"
+	  fputs ("GNU libavl 2.0.3\n"
                  "Copyright (C) 1998, 1999, 2000, 2001, 2002, 2004 "
                  "Free Software Foundation, Inc.\n"
 		 "This program comes with NO WARRANTY, not even for\n"

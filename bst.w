@@ -6577,7 +6577,7 @@ main (int argc, char *argv[]) @
   parse_command_line (argv, &opts);
 
   if (opts.verbosity >= 0)
-    fputs ("bst-test for GNU libavl 2.0.2; use --help to get help.\n", stdout);
+    fputs ("bst-test for GNU libavl 2.0.3; use --help to get help.\n", stdout);
   
   if (!opts.seed_given) @
     opts.seed = time_seed () % 32768u;

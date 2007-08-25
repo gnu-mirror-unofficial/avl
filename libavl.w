@@ -19,7 +19,7 @@
 
 @c %**start of header
 @setfilename libavl.info
-@settitle GNU libavl 2.0.2
+@settitle GNU libavl 2.0.3
 @c %**end of header
 @setchapternewpage odd
 
@@ -179,7 +179,7 @@ $\TEX\$@unskip
 @title Binary Search Trees and Balanced Trees
 @subtitle @libavl{} Binary Search Tree Library
 @subtitle Volume 1: Source Code
-@subtitle Version 2.0.2
+@subtitle Version 2.0.3
 
 @vskip 0pt plus 1filll
 @center @image{cover}
@@ -204,7 +204,7 @@ Free Documentation License".
 
 @ifnottex
 @node Top, Preface, (dir), (dir)
-@top GNU @libavl{} 2.0.2
+@top GNU @libavl{} 2.0.3
 
 @menu
 * Preface::
