@@ -2,7 +2,8 @@ The following features are planned for future versions of GNU libavl.
 Please keep in mind these plans are subject to change.  There is no
 predictable timeline for any of this, because libavl is developed as
 time becomes available.  Your feedback, including suggestions for
-prioritization or additional features, is welcomed at <blp@gnu.org>.
+prioritization or additional features, is welcomed at
+<bug-avl@gnu.org>.
 
 For more information on some of the items listed below, look in the
 TODO and OUTLINE files.

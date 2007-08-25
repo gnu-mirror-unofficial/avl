@@ -1,5 +1,18 @@
 2007-08-25  Ben Pfaff  <blp@gnu.org>
 
+	Fix incompatibility with recent Texinfo.
+	* INSTALL: Recommend Texinfo 4.8.
+	* libavl.w: Don't define macro named @comma, as recent Texinfo has
+	a command by that name already.
+	* texinfo.c (open_header_file): Redefine the Texinfo @tab command,
+	because Texinfo 4.8 allows it only inside @multitable, and we want
+	to use it elsewhere.
+
+	* README: Use bug-avl@gnu.org as bug-reporting address.
+	* ROADMAP: Ditto.
+
+2007-08-25  Ben Pfaff  <blp@gnu.org>
+
 	* afm2c: Update to GPLv3.
 	* check-table: Ditto.
 	* cover.eps: Ditto.

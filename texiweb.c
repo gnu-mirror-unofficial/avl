@@ -1562,6 +1562,13 @@ open_header_file (char *line)
     {
       "@set COMMA ,\n",
       "\n",
+      "@tex\n",
+      "\\global\\def\\unaryminus{${}^-$}\n",
+      "\\global\\def\\unaryplus{${}^+$}\n",
+      "\\global\\def\\exponent#1{$\\cdot{}10^{#1}$}\n",
+      "\\global\\def\\tab{&\\the\\everytab}%\n",
+      "@end tex\n",
+      "\n",
       "@iftex\n",
       "@set LANG @math{@langle{}@thinspace{}}\n",
       "@set RANG @math{@thinspace{}@rangle{}}\n",
@@ -1740,11 +1747,6 @@ open_header_file (char *line)
       "@end macro\n",
       "@end iftex\n",
       "\n",
-      "@tex\n",
-      "\\global\\def\\unaryminus{${}^-$}\n",
-      "\\global\\def\\unaryplus{${}^+$}\n",
-      "\\global\\def\\exponent#1{$\\cdot{}10^{#1}$}\n",
-      "@end tex\n\n",
       NULL
     };
 

@@ -143,7 +143,7 @@ You need the following software to fully build this version of libavl:
 
 	  makeinfo is needed to build text, Info, and HTML versions of
 	  the libavl manual.  Version 4.1 or later is required to
-	  build the HTML version of the manual, but version 4.7 is
+	  build the HTML version of the manual, but version 4.8 is
 	  recommended, and this version or later is recommended in any
 	  case.
 

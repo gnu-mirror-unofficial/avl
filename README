@@ -16,8 +16,8 @@ improving libavl.  Your suggestions and bug reports are appreciated,
 whether related to code or prose.  Exposition, style, spelling,
 punctuation, and grammar are all fair game.  All the code in this
 release has been carefully tested, but unknown bugs may still exist.
-Please check out and proofread libavl and report back any bugs to me
-by email at <blp@gnu.org>.
+Please check out and proofread libavl and report any bugs by email to
+<bug-avl@gnu.org>.
 
 This release supports the following kinds of trees:
 
@@ -62,10 +62,8 @@ Components of this distribution are licensed as follows:
 	* Programs are also released under the GNU General Public
           License.
 
-Please send bug reports and enhancement requests for libavl to Ben
-Pfaff <blp@gnu.org>.
-
-Share and enjoy!
+Please send bug reports and enhancement requests for libavl to
+<bug-avl@gnu.org>.
 
 Local variables:
 mode: text

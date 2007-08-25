@@ -136,9 +136,6 @@ $\TEX\$@unskip
 @math{\ASCII\}
 @end macro
 @end ifnottex
-@macro comma
-,
-@end macro
 
 @c Similar to @pxref{} but produces only a page number in TeX output.
 @tex
