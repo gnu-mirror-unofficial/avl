@@ -112,6 +112,7 @@ includes:
 	- catalogue.w: Source for catalogue of algorithms appendix.
 	- *.tree: Binary tree figures in `texitree' source form.
 	- *.png: Binary tree figures as bitmap graphics.
+	- *.pdf: Binary tree figures in PDF format.
 	- *.eps: Binary tree figures (generated, not distributed).
 	- *.txt: Binary tree figures (generated, not distributed).
 	- texinfo.tex: TeX macros for Texinfo.
@@ -152,17 +153,11 @@ You need the following software to fully build this version of libavl:
 
 	  You should only need these tools if you modify the .tree
 	  files in the source distribution and want to build a custom
-	  HTML version of libavl, or if you want to build any PDF
-	  version of the libavl manual.  Ghostscript is used to render
+	  HTML or PDF version of libavl.  Ghostscript is used to render
 	  PostScript to oversized PNGs and Imagemagick does
-	  antialiased scaling to reasonable sizes.
-
-	* dvipdfm (ftp://ftp.kettering.edu/pub/outgoing/mwicks/dvipdfm).
-
-	  dvipdfm is needed to build a PDF version of the libavl
-	  manual.  You might use ps2pdf from GNU Ghostscript instead,
-	  but the results are not as nice, and this will not be done
-	  automatically by the included Makefile.
+	  antialiased scaling to reasonable sizes.  Ghostscript is
+	  also used in the process of converting PostScript to PDF
+	  format.
 	  
 Building
 --------

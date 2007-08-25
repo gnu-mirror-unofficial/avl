@@ -1,5 +1,15 @@
 2007-08-25  Ben Pfaff  <blp@gnu.org>
 
+	* Makefile: Use pdftex instead of dvipdfm.  Use epstopdf to
+	convert eps files to PDF format.  This fixes mysterious
+	mis-placement of images in output produced by dvipdfm.
+	
+	* epstopdf: New file.
+
+	* libavl.w: Add @finalout to fix black blotch on cover page.
+
+2007-08-25  Ben Pfaff  <blp@gnu.org>
+
 	Fix incompatibility with recent Texinfo.
 	* INSTALL: Recommend Texinfo 4.8.
 	* libavl.w: Don't define macro named @comma, as recent Texinfo has

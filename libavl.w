@@ -173,6 +173,8 @@ $\TEX\$@unskip
 @setanswerfile libavl.ans
 @include libavl.hdr
 
+@finalout
+
 @titlepage
 @titlefont{An Introduction to}
 @sp 1

@@ -10,6 +10,8 @@ trees = $(wildcard *.tree)
 eps_images = $(patsubst %.tree,%.eps,$(trees))
 txt_images = $(patsubst %.tree,%.txt,$(trees))
 png_images = $(patsubst %.tree,%.png,$(trees)) trav-circ.png trav-line.png
+pdf_images = $(patsubst %.tree,%.pdf,$(trees)) trav-circ.pdf trav-line.pdf \
+	cover.pdf
 
 w_source = avl.w bst.w catalogue.w examples.w extra.w glossary.w	\
 intro.w libavl.w pavl.w pbst.w prb.w preface.w rb.w references.w	\
@@ -44,6 +46,7 @@ docs: libavl.dvi libavl.info libavl.text libavl.html libavl.ps libavl.pdf
 eps: $(eps_images)
 txt: $(txt_images)
 png: $(png_images)
+pdf: $(pdf_images)
 programs: $(programs)
 sources: $(built_sources)
 
@@ -135,8 +138,8 @@ libavl.dvi: libavl.texi $(eps_images)
 	TEX=$(TEX) texi2dvi --batch $<
 libavl.ps: libavl.dvi
 	dvips -P psfonts -o $@ $<
-libavl.pdf: libavl.dvi
-	dvipdfm $<
+libavl.pdf: libavl.texi $(pdf_images)
+	TEX=$(TEX) texi2pdf --batch --quiet $<
 libavl.info: libavl.texi $(txt_images)
 	makeinfo $(ALL_MAKEINFO_FLAGS) $<
 libavl.text: libavl.texi $(txt_images)
@@ -159,6 +162,9 @@ libavl.html: libavl.texi $(png_images) texiweb $(w_source)
 
 %.png: %.eps
 	./eps2png $< $@ || touch $@
+
+%.pdf: %.eps
+	./epstopdf $< || touch $@
 
 texitree: texitree.o
 	$(CC) -lm $(LDFLAGS) $< $(LOADLIBS) $(LDLIBS) -o $@
@@ -208,7 +214,7 @@ distclean: clean
 	rm -f *~
 
 maintainer-clean: distclean
-	rm -f $(png_images) $(built_sources)
+	rm -f $(png_images) $(pdf_images) $(built_sources)
 	rm -f libavl.info*
 
 .PHONY: all 
