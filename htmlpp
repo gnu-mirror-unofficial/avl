@@ -385,8 +385,8 @@ for my $d (@srcfiles) {
 	    next;
 	}
 
-	if (my ($leader, $file, $piece, $html_node, $first_piece, $op)
-	    = /^(.*)<!-- HTMLPP: file='(.*)' -->(\d+)\. \&lt;<a name="\3"><\/a>(.*) (\d+)\&gt; (\+?=)\s*$/) {
+	if (my ($leader, $file, $piece, $name, $html_node, $first_piece, $op)
+	    = /^(.*)<!-- HTMLPP: file='(.*)' -->(\d+)\. \&lt;<a name="([^"]+)"><\/a>(.*) (\d+)\&gt; (\+?=)\s*$/) {
 	    die "$srcdir/$file: does not exist (run `texiweb --segments')\n"
 		if ! -e "$srcdir/$file";
 
@@ -394,13 +394,13 @@ for my $d (@srcfiles) {
 	    # trying to invoke an external plug-in for text/x-csrc.
 	    link_or_cp ("$srcdir/$file", "$dstdir/$file.txt");
 
-	    my ($name) = "name=\"$piece\"";
+	    my ($name_atr) = "name=\"$name\"";
 	    my ($href) = "href=\"$file.txt\"";
 	    $_ = "$leader<a $href>$piece</a>. "
-		. "&lt;<a $name $href>$html_node $first_piece</a>&gt; $op";
+		. "&lt;<a $name_atr $href>$html_node $first_piece</a>&gt; $op";
 	}
 
-	die if /<!-- HTMLPP:/;
+	die "$srcdir/$d: unparsed HTMLPP:\n$_\n" if /<!-- HTMLPP:/;
 
 	print DST "$_\n";
     }

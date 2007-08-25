@@ -10,6 +10,8 @@
 	* texinfo.c (open_header_file): Redefine the Texinfo @tab command,
 	because Texinfo 4.8 allows it only inside @multitable, and we want
 	to use it elsewhere.
+	* htmlpp: Increase generality of a regular expression match, so
+	that it works with the latest "makeinfo --html" output.
 
 	* README: Use bug-avl@gnu.org as bug-reporting address.
 	* ROADMAP: Ditto.
