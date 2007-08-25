@@ -1,5 +1,5 @@
 libavl NEWS -- history of user-visible changes.  
-Time-stamp: <2007-08-25 15:06:39 blp>
+Time-stamp: <2007-08-25 15:09:49 blp>
 Copyright (C) 1998, 1999 Free Software Foundation, Inc.
 See the end for copying conditions.
 
@@ -7,10 +7,11 @@ Please send libavl bug reports to bug-avl@gnu.org.
 
 Changes for version 2.0.3:
 
-  License change: the book is now under the GNU Free Documentation
-  License (version 1.2 or later), the libraries under the GNU Lesser
-  General Public License (version 3 or later), and programs under the
-  GNU General Public License (version 3 or later).
+  Previously, all of libavl was under GPL version 2.  Now, the libavl
+  book is under the GNU Free Documentation License (version 1.2 or
+  later), the libraries under the GNU Lesser General Public License
+  (version 3 or later), and programs under the GNU General Public
+  License (version 3 or later).  Refer to README for details.
 
   Fix incompatibility between libavl and recent versions of Texinfo.
   libavl now recommends Texinfo 4.8.
@@ -23,6 +24,11 @@ Changes for version 2.0.3:
   Fixed the spelling of referenced paper author Quentin Stout's name.
 
   Fixed a few minor typographical problems.
+
+  Updated INSTALL to explain the intended use of libavl.
+
+  libavl now has a dedicated mailing list for reporting bugs:
+  bug-avl@gnu.org.
 
 Changes for version 2.0.2:
 
