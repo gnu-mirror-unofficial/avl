@@ -1,5 +1,5 @@
 libavl NEWS -- history of user-visible changes.  
-Time-stamp: <2007-08-25 14:49:49 blp>
+Time-stamp: <2007-08-25 15:06:39 blp>
 Copyright (C) 1998, 1999 Free Software Foundation, Inc.
 See the end for copying conditions.
 
@@ -14,6 +14,15 @@ Changes for version 2.0.3:
 
   Fix incompatibility between libavl and recent versions of Texinfo.
   libavl now recommends Texinfo 4.8.
+
+  BST_MAX_HEIGHT, AVL_MAX_HEIGHT, RB_MAX_HEIGHT were fixed to use the
+  maximum, not minimum, height of a tree, and to have reasonable
+  values for 64-bit systems.  The lower bound on the number of nodes
+  in an AVL tree was fixed also.
+
+  Fixed the spelling of referenced paper author Quentin Stout's name.
+
+  Fixed a few minor typographical problems.
 
 Changes for version 2.0.2:
 
