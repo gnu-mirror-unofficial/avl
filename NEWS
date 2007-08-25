@@ -1,10 +1,16 @@
 libavl NEWS -- history of user-visible changes.  
-Time-stamp: <2004-12-28 22:55:28 blp>
+Time-stamp: <2007-08-25 14:26:57 blp>
 Copyright (C) 1998, 1999 Free Software Foundation, Inc.
 See the end for copying conditions.
 
 Please send libavl bug reports to blp@gnu.org.
 
+Changes for version 2.0.3:
+
+  License change: the book is now under the GNU Free Documentation
+  License, the libraries under the GNU Lesser General Public License,
+  and programs under the GNU General Public License.
+
 Changes for version 2.0.2:
 
   Fixed a bug in tavl_delete() found by Petr Silhavy.  This is the

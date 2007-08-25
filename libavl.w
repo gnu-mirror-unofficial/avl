@@ -3,21 +3,12 @@
 @c GNU libavl - library for manipulation of binary trees.
 @c Copyright (C) 1998, 1999, 2000, 2001, 2002, 2004 Free Software
 @c Foundation, Inc.
-@c 
-@c This program is free software; you can redistribute it and/or
-@c modify it under the terms of the GNU General Public License as
-@c published by the Free Software Foundation; either version 2 of
-@c the License, or (at your option) any later version.
-@c 
-@c This program is distributed in the hope that it will be useful,
-@c but WITHOUT ANY WARRANTY; without even the implied warranty of
-@c MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-@c General Public License for more details.
-@c 
-@c You should have received a copy of the GNU General Public License
-@c along with this program; if not, write to: Free Software
-@c Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 
-@c 02110-1301 USA.
+@c Permission is granted to copy, distribute and/or modify this document
+@c under the terms of the GNU Free Documentation License, Version 1.2
+@c or any later version published by the Free Software Foundation;
+@c with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+@c A copy of the license is included in the section entitled "GNU
+@c Free Documentation License".
 
 @c @libavl{} macro
 @iftex
@@ -203,25 +194,12 @@ $\TEX\$@unskip
 Copyright @copyright{} 1998, 1999, 2000, 2001, 2002, 2004 Free
 Software Foundation, Inc.
 
-This program is free software; you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation; either version 2 of the License, or (at
-your option) any later version.
-
-This program is distributed in the hope that it will be useful, but
-WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program; if not, write to:
-
-@display
-Free Software Foundation, Inc.
-51 Franklin Street, Fifth Floor
-Boston, MA 02110-1301
-UNITED STATES
-@end display
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.2
+or any later version published by the Free Software Foundation;
+with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+A copy of the license is included in the section entitled "GNU
+Free Documentation License".
 @end titlepage
 
 @shortcontents
@@ -250,6 +228,7 @@ UNITED STATES
 * Red-Black Trees with Parent Pointers::  
 * References::                  
 * Supplementary Code::          
+* GNU Free Documentation License::
 * Glossary::                    
 * Answers to All the Exercises::
 * Catalogue of Algorithms::     
@@ -281,6 +260,11 @@ UNITED STATES
 
 @include references.w
 @include extra.w
+
+@node GNU Free Documentation License
+@appendix GNU Free Documentation License
+@include fdl.texi
+
 @include glossary.w
 
 @node Answers to All the Exercises, Catalogue of Algorithms, Glossary, Top

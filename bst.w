@@ -3,21 +3,12 @@
 @c GNU libavl - library for manipulation of binary trees.
 @c Copyright (C) 1998, 1999, 2000, 2001, 2002, 2004 Free Software
 @c Foundation, Inc.
-@c 
-@c This program is free software; you can redistribute it and/or
-@c modify it under the terms of the GNU General Public License as
-@c published by the Free Software Foundation; either version 2 of
-@c the License, or (at your option) any later version.
-@c 
-@c This program is distributed in the hope that it will be useful,
-@c but WITHOUT ANY WARRANTY; without even the implied warranty of
-@c MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-@c General Public License for more details.
-@c 
-@c You should have received a copy of the GNU General Public License
-@c along with this program; if not, write to: Free Software
-@c Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 
-@c 02110-1301 USA.
+@c Permission is granted to copy, distribute and/or modify this document
+@c under the terms of the GNU Free Documentation License, Version 1.2
+@c or any later version published by the Free Software Foundation;
+@c with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+@c A copy of the license is included in the section entitled "GNU
+@c Free Documentation License".
 
 @deftypedef bst_comparison_func
 @deftypedef bst_item_func
@@ -37,7 +28,7 @@ generic table headers designed a couple of chapters back, simply
 replacing |tbl| by |bst|, the prefix used in this table module.
 
 @(bst.h@> =
-@<License@>
+@<Library License@>
 #ifndef BST_H
 #define BST_H 1
 
@@ -57,7 +48,7 @@ replacing |tbl| by |bst|, the prefix used in this table module.
 @
 
 @(bst.c@> =
-@<License@>
+@<Library License@>
 #include <assert.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -4726,7 +4717,7 @@ tree-based structures.  This code is grouped into a single file,
 @(test.c@>, which has the following structure:
 
 @(test.c@> =
-@<License@>
+@<Program License@>
 #include <assert.h>
 #include <limits.h>
 #include <stdarg.h>
@@ -4750,7 +4741,7 @@ The code specifically for testing BSTs goes into @(bst-test.c@>,
 outlined like this:
 
 @(bst-test.c@> =
-@<License@>
+@<Program License@>
 #include <assert.h>
 #include <limits.h>
 #include <stdio.h>
@@ -4770,7 +4761,7 @@ The interface between @(test.c@> and @(bst-test.c@> is contained
 in @(test.h@>:
 
 @(test.h@> =
-@<License@>
+@<Program License@>
 #ifndef TEST_H
 #define TEST_H 1
 
@@ -6839,7 +6830,7 @@ Here's the whole program:
 
 @c tested 2001/6/27
 @(bsts.c@> = 
-@<License@>
+@<Library License@>
 #include <assert.h>
 #include <stdio.h>
 #include <stdlib.h>

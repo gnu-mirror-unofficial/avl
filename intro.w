@@ -3,21 +3,12 @@
 @c GNU libavl - library for manipulation of binary trees.
 @c Copyright (C) 1998, 1999, 2000, 2001, 2002, 2004 Free Software
 @c Foundation, Inc.
-@c 
-@c This program is free software; you can redistribute it and/or
-@c modify it under the terms of the GNU General Public License as
-@c published by the Free Software Foundation; either version 2 of
-@c the License, or (at your option) any later version.
-@c 
-@c This program is distributed in the hope that it will be useful,
-@c but WITHOUT ANY WARRANTY; without even the implied warranty of
-@c MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-@c General Public License for more details.
-@c 
-@c You should have received a copy of the GNU General Public License
-@c along with this program; if not, write to: Free Software
-@c Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 
-@c 02110-1301 USA.
+@c Permission is granted to copy, distribute and/or modify this document
+@c under the terms of the GNU Free Documentation License, Version 1.2
+@c or any later version published by the Free Software Foundation;
+@c with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+@c A copy of the license is included in the section entitled "GNU
+@c Free Documentation License".
 
 @node Introduction, The Table ADT, Preface, Top
 @chapter Introduction
@@ -35,7 +26,7 @@ answers to all the exercises, glossary, and index.
 * Audience::                    
 * Reading the Code::            
 * Code Conventions::            
-* Code License::                
+* Licenses::                
 @end menu
 
 @node Audience, Reading the Code, Introduction, Introduction
@@ -257,7 +248,7 @@ functions are not indexed.
 @references
 @bibref{Knuth 1992}, ``How to read a @WEB{}''.
 
-@node Code Conventions, Code License, Reading the Code, Introduction
+@node Code Conventions, Licenses, Reading the Code, Introduction
 @section Code Conventions
 
 Where possible, the @libavl{} source code complies to the requirements
@@ -271,13 +262,18 @@ vertical space, K&R indentation style is used instead of GNU style.
 @bibref{ISO 1999};
 @bibref{FSF 2001}, ``Writing C''.
 
-@node Code License,  , Code Conventions, Introduction
-@section License
+@node Licenses,  , Code Conventions, Introduction
+@section Licenses
 
-This book, including the code in it, is subject to the following
+This book is licensed under the GNU Free Documentation License,
+version 1.2 or later.  The book includes complete source code for the
+libavl libraries and related programs, so these are also released
+under the GNU Free Documentation License.
+
+The libraries in this book are also released under the following
 license:
 
-@<License@> =
+@<Library License@> =
 @iftangle
 /* libavl - library for manipulation of binary trees.
    Copyright (C) 1998, 1999, 2000, 2001, 2002, 2004 Free Software
@@ -289,20 +285,52 @@ license:
    Software Foundation, Inc.
 @end ifweave
 
-   This program is free software; you can redistribute it and/or
-   modify it under the terms of the GNU General Public License as
-   published by the Free Software Foundation; either version 2 of the
-   License, or (at your option) any later version.
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Lesser General Public
+   License as published by the Free Software Foundation; either
+   version 2.1 of the License, or (at your option) any later version.
 
-   This program is distributed in the hope that it will be useful, but
-   WITHOUT ANY WARRANTY; without even the implied warranty of
-   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
-   See the GNU General Public License for more details.
- 
-   You should have received a copy of the GNU General Public License
-   along with this program; if not, write to: Free Software
-   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Lesser General Public License for more details.
+
+   You should have received a copy of the GNU Lesser General Public
+   License along with this library; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
    02110-1301 USA.
+*/
+
+@
+
+The programs in this book are also released under the following
+license:
+
+@<Program License@> =
+@iftangle
+/* libavl - library for manipulation of binary trees.
+   Copyright (C) 1998, 1999, 2000, 2001, 2002, 2004 Free Software
+   Foundation, Inc.
+@end iftangle
+@ifweave
+/* GNU @libavl{} - library for manipulation of binary trees.
+   Copyright @copyright{} 1998, 1999, 2000, 2001, 2002, 2004 Free
+   Software Foundation, Inc.
+@end ifweave
+
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation; either version 2 of the License, or
+   (at your option) any later version.
+
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+
+   You should have received a copy of the GNU General Public License along
+   with this program; if not, write to the Free Software Foundation, Inc.,
+   51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 */
 
 @

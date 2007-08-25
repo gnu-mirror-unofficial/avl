@@ -45,12 +45,22 @@ See INSTALL for advice on where to go from here.  Take a look at NEWS
 for a list of new features.  For features tentatively planned for
 inclusion in future releases of libavl, see ROADMAP.
 
-libavl, including all files in this distribution, is licensed under
-the GNU General Public License (GPL), which should be included in this
-directory in file COPYING.  This is not the GNU Lesser General Public
-License (LGPL).  The choice of the GPL instead of the LGPL is quite
-deliberate.  Please read the license and become familiar with its
-terms.
+Components of this distribution are licensed as follows:
+
+	* The manual is covered by the GNU Free Documentation License.
+          The manual includes complete source code for the libavl
+          libraries and related programs, so these are also released
+          under the GNU Free Documentation License.
+
+	* The libavl libraries are also released under the GNU Lesser
+	  General Public License.  The GNU GPL often makes sense for
+	  libraries, but because so many other libraries provide
+	  balanced search trees, the LGPL is a better fit for libavl.
+	  See <http://www.gnu.org/licenses/why-not-lgpl.html> for more
+	  information.
+
+	* Programs are also released under the GNU General Public
+          License.
 
 Please send bug reports and enhancement requests for libavl to Ben
 Pfaff <blp@gnu.org>.
