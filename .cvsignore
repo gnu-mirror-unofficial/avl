@@ -1,6 +1,10 @@
 100-114.eps
 100-114.pdf
+100-114.png
+100-114.txt
 altdef.eps
+altdef.pdf
+altdef.png
 altdef.txt
 avl-test.c
 avl.c
@@ -69,6 +73,12 @@ avlex4.eps
 avlex4.pdf
 avlex4.png
 avlex4.txt
+avlex5.eps
+avlex5.png
+avlex5.txt
+avlex6.eps
+avlex6.png
+avlex6.txt
 avlexer.eps
 avlexer.pdf
 avlexer.png
@@ -198,6 +208,7 @@ patholog2.txt
 pavl-test.c
 pavl.c
 pavl.h
+pavlins.eps
 pbst-test.c
 pbst.c
 pbst.h
