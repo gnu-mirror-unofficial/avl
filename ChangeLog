@@ -1,5 +1,21 @@
 2007-08-25  Ben Pfaff  <blp@gnu.org>
 
+	* avlex5.eps: Remove unused file.
+	
+	* avlex5.png: Ditto.
+
+	* avlex5.txt: Ditto.
+	
+	* avlex6.eps: Remove unused file.
+
+	* avlex6.png: Ditto.
+	
+	* avlex6.txt: Ditto.
+	
+	* pavlins.eps: Ditto.
+
+2007-08-25  Ben Pfaff  <blp@gnu.org>
+
 	* Makefile: Use pdftex instead of dvipdfm.  Use epstopdf to
 	convert eps files to PDF format.  This fixes mysterious
 	mis-placement of images in output produced by dvipdfm.
