@@ -54,6 +54,9 @@ sub parse_nodes {
 		$headnode{$srcfn} = $node;
 		last;
 	    } elsif (my ($target) = /^<meta http-equiv=\"refresh\" content=\"0; url=([^\"]*)\">/) {
+		# This compensates for an apparent Texinfo 4.8 bug.
+		$target =~ s/#(\d+)/#g_t$1/;
+
 		$refresh{$srcfn} = $target;
 		last;
 	    }
@@ -167,8 +170,8 @@ sub linkimg {
 for my $d (@srcfiles) {
     next if defined ($refresh{$d});
 
-    my ($headers) = 0;
-    my ($saw_headers) = 0;
+    my ($div) = 0;
+    my ($saw_div) = 0;
     my ($body) = 0;
     my ($sawtitle) = 0;
     my ($sawmeta) = 0;
@@ -374,14 +377,13 @@ for my $d (@srcfiles) {
 	    next;
 	}
 
-	if (my ($node) = /^(?:Node:)?<a name=\"([^\"]*)\">([^<]*)</
-	    and !$saw_headers) {
-	    print DST "<a name=\"$node\">\n";
-	    $saw_headers = 1;
-	    $headers = 1;
+	if (/^<div class=\"node\">$/ && !$saw_div) {
+	    $saw_div = 1;
+	    $div = 1;
 	    next;
-	} elsif ($headers) {
-	    $headers = 0 if /<br>$/;
+	} elsif ($div) {
+	    print "$_\n" if /^<a name=\"([^\"]*)\"><\/a>$</;
+	    $div = 0 if /^<\/div>$/;
 	    next;
 	}
 

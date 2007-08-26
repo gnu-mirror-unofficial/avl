@@ -1,5 +1,11 @@
 2007-08-25  Ben Pfaff  <blp@gnu.org>
 
+	* htmlpp: Compensate for apparent Texinfo 4.8 bug in emitting HTTP
+	redirects.  Recognize <div class="node"> element emitted by
+	Texinfo 4.8.
+
+2007-08-25  Ben Pfaff  <blp@gnu.org>
+
 	* Makefile: Distribute only specific files, not every file in the
 	directory.  Necessary to avoid distributing version-control system
 	files.
