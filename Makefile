@@ -39,6 +39,17 @@ prb.c prb.h prb-test.c				\
 test.c test.h					\
 bin-ary-test.c srch-test.c seq-test.c bsts.c
 
+extra_dist = AUTHORS COPYING COPYING.DOC COPYING.LIB ChangeLog INSTALL	\
+Makefile NEWS OUTLINE README ROADMAP THANKS TODO afm2c check-table	\
+cover.eps eps2png epstopdf fdl.texi helvetica.afm helvetica.inc htmlpp	\
+index.png libavl.info-[0-9] next.png padding.png prev.png skipback.png	\
+skipfwd.png slr.c texinfo.tex texitree.c texiweb.c toc.png		\
+trav-circ.eps trav-circ.sk trav-line.eps trav-line.sk trav-line.txt	\
+up.png
+
+dist_files = $(w_source) $(built_sources) $(trees) $(png_images)	\
+$(pdf_images) libavl.info
+
 all: docs programs
 info: libavl.info
 dvi: libavl.dvi
@@ -169,18 +180,14 @@ libavl.html: libavl.texi $(png_images) texiweb $(w_source)
 texitree: texitree.o
 	$(CC) -lm $(LDFLAGS) $< $(LOADLIBS) $(LDLIBS) -o $@
 
-dist: distclean
-	if test -z "$(version)"; then		\
-		version=`date +avl-%Y.%m.%d`;	\
-	else					\
-		version="avl-$(version)";	\
-	fi &&					\
-	dir="`pwd`" &&				\
-	cd .. &&				\
-	rm -f $$version &&			\
-	ln -sf $$dir $$version &&		\
-	tar chfz $$version.tar.gz $$version &&	\
-	rm -f $$version
+version = 2.0.3
+distdir: $(dist_files)
+	rm -rf avl-$(version)
+	mkdir avl-$(version)
+	cp $(dist_files) $(extra_dist) avl-$(version)
+dist: distdir
+	tar chfz avl-$(version).tar.gz avl-$(version)
+	rm -rf avl-$(version)
 
 check: $(testers)
 	@for d in $(testers); do		\
@@ -220,5 +227,5 @@ maintainer-clean: distclean
 .PHONY: all 
 .PHONY: docs info dvi eps txt png
 .PHONY: programs sources
-.PHONY: dist check checksrc
+.PHONY: distdir dist check checksrc
 .PHONY: texclean clean mostlyclean distclean maintainer-clean

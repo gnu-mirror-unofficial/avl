@@ -1,5 +1,11 @@
 2007-08-25  Ben Pfaff  <blp@gnu.org>
 
+	* Makefile: Distribute only specific files, not every file in the
+	directory.  Necessary to avoid distributing version-control system
+	files.
+
+2007-08-25  Ben Pfaff  <blp@gnu.org>
+
 	* avlex5.eps: Remove unused file.
 	
 	* avlex5.png: Ditto.
