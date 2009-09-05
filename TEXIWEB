@@ -1,0 +1,94 @@
+Notes on the TexiWEB language:
+
+TexiWEB is Texinfo, with a few additions.  You can use almost any
+Texinfo you like in a TexiWEB document.  Any exceptions are probably
+due either to bugs or insufficient generality in the TexiWEB
+translator program.
+
+TexiWEB draws inspiration from Knuth's WEB language.  If you know a
+little bit about WEB, then you should be able to figure out TexiWEB
+quickly.
+
+The texiweb program processes TexiWEB.  In "weave" mode, it translates
+TexiWEB input into Texinfo output.  In "tangle" mode, it extracts code
+segments into the source files specified in the TexiWEB input.
+
+TexiWEB assumes that code segments are written in C.  The "texiweb"
+program formats C keywords and operators in its output based on this
+assumption.  It also parses code segments to find out function
+definitions, global variables, structure definitions, and typedefs,
+and uses this information to enter these definitions in the Texinfo
+concept index (@cindex).
+
+A TexiWEB code segment looks like this:
+
+    @<Hello world@> =
+    #include <stdio.h>
+
+    @
+
+Use += instead of = to extend a segment:
+
+    @<Hello world@> +=
+    int main(void)
+    {
+      @<Print hello@>
+      return 0;
+    }
+    @
+
+In "tangle" mode, each of the lines in @<Print hello@> will be
+expanded above indented by two spaces, since the reference above is
+itself indented by two spaces.
+
+TexiWEB can also do word prefix substitutions in references; see near
+the end of http://adtinfo.org/libavl.html/Reading-the-Code.html for an
+explanation.
+
+A segment introduced with @( specifies the contents of a file:
+
+    @(hello.c) =
+    @<Hello world@>
+    @
+
+The segment @<Anonymous@> is special.  This segment may not be
+included in other segments, so it is never written to a file.  It is
+useful for example code in expository text.  In "weave" mode, the
+section number is left off anonymous segments.  The texiweb program,
+with --unused, warns about ordinary segments that are not directly or
+indirectly included in a file, but it will not warn about anonymous
+segments.
+
+A TexiWEB document should include a @setheaderfile command near its
+top, perhaps just before @titlepage.  The command should specify the
+name of a file, which will be created by the texiweb program as part
+of the "weave" process.  In the Texinfo output @setheaderfile will be
+translated into @include.
+
+Outside a code segment, TexiWEB treats text surrounded by |
+characters as C code and applies the same kind of formatting to it as
+it does to code segments.  TexiWEB does the same thing for comments
+within code segments, so that within a code segment:
+/* Asserts that |tbl_insert()| succeeds at inserting |item| into |table|. */
+becomes a nicely formatted comment when it passes through the "weave"
+process.
+
+TexiWEB implements @iftangle...@end iftangle and @ifweave...@end
+ifweave directives to allow some input sections to be processed only
+in the specified mode.  These can be used inside or outside code
+segments.
+
+TexiWEB implements a feature called "catalogues" that libavl uses to
+document the algorithms that it implements, e.g.:
+http://adtinfo.org/libavl.html/Catalogue-of-Algorithms.html
+I can document this more fully if you like.
+
+TexiWEB has special support for exercises and their answers, which I
+found useful in libavl since it is really a textbook of sorts.
+I can document this more fully if you like.
+
+The @deftypedef command declares to the TexiWEB parser that its
+argument is a typedef name, which makes the formatting of the name
+clearer.  Usually the TexiWEB parser can figure this out on its own,
+but if a typedef name is only created by a word prefix substitution in
+a segment reference, then it will not figure it out.
