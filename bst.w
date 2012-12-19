@@ -1,7 +1,7 @@
 @c -*-texinfo-*-
 @c 
 @c GNU libavl - library for manipulation of binary trees.
-@c Copyright (C) 1998, 1999, 2000, 2001, 2002, 2004 Free Software
+@c Copyright (C) 1998, 1999, 2000, 2001, 2002, 2004, 2012 Free Software
 @c Foundation, Inc.
 @c Permission is granted to copy, distribute and/or modify this document
 @c under the terms of the GNU Free Documentation License, Version 1.2
@@ -4255,13 +4255,13 @@ from looking at the pattern in binary:
 @tab @hf{}3
 @tab @hf{}@w{ }9 = @binary{01001}
 @tab @hf{}8 = @binary{01000}
-@tab @hf{}1 = @binary{00000}
+@tab @hf{}1 = @binary{00001}
 
 @item @tab @hf{}9
 @tab @hf{}3
-@tab @hf{}10 = @binary{01001}
+@tab @hf{}10 = @binary{01010}
 @tab @hf{}8 = @binary{01000}
-@tab @hf{}2 = @binary{00000}
+@tab @hf{}2 = @binary{00010}
 
 @end multitable
 
